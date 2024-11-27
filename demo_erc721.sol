@@ -7,6 +7,7 @@ import "@openzeppelin/contracts@5.0.0/token/ERC721/extensions/ERC721Burnable.sol
 import "@openzeppelin/contracts@5.0.0/access/Ownable.sol";
 import "@openzeppelin/contracts@5.0.0/interfaces/IERC2981.sol";
 
+
 contract FancyNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
     uint256 public royaltyPercentage = 500;  // 5% royalties
     mapping(uint256 => uint256) public tokenXP;

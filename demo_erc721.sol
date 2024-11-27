@@ -56,3 +56,4 @@ contract FancyNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
         return uint256(keccak256(abi.encodePacked(categoryId, rarityLevel, msg.sig)));
     }
 }
+
